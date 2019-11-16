@@ -5,6 +5,8 @@ using System.Data.Sql;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Aqua_AMS.Model;
+using Dapper;
 
 namespace Aqua_AMS.Database
 {
@@ -21,8 +23,28 @@ namespace Aqua_AMS.Database
 
         }
 
-#endregion
+        #endregion
+        #region Parents
+        public static void InsertParent(IParentsModel model)
+        {
 
+            using (var connection = SC())
+            {
+                DynamicParameters Dp = new DynamicParameters();
+               
+
+
+
+
+            }
+
+
+        }
+
+
+
+
+        #endregion
 
 
 

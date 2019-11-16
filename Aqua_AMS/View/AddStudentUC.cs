@@ -42,6 +42,11 @@ namespace Aqua_AMS.View
 
         private void BtnSaveParent_Click(object sender, EventArgs e)
         {
+            ParentO.ParentName = txtparentName.Text;
+            ParentO.ParentSSn = txtSsn.Text;
+            ParentO.Phone = txtphone.Text;
+            ParentO.address = txtaddress.Text;
+            
             AddparentPanel.Visible = false;
         }
 

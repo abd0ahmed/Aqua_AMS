@@ -63,14 +63,14 @@
             this.BtnAddStudent = new Bunifu.Framework.UI.BunifuTileButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.datagrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.sClassDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aMS_DataDataSet = new Aqua_AMS.AMS_DataDataSet();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnClose = new System.Windows.Forms.Button();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.aMS_DataDataSet = new Aqua_AMS.AMS_DataDataSet();
             this.aMSDataDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sClassDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.s_ClassDataTableAdapter = new Aqua_AMS.AMS_DataDataSetTableAdapters.S_ClassDataTableAdapter();
             this.ClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sellprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,10 +82,10 @@
             this.AddparentPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aMS_DataDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aMSDataDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sClassDataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aMS_DataDataSet)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aMSDataDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -319,7 +319,7 @@
             this.AddparentPanel.Controls.Add(this.txtphone);
             this.AddparentPanel.Location = new System.Drawing.Point(-1, 155);
             this.AddparentPanel.Name = "AddparentPanel";
-            this.AddparentPanel.Size = new System.Drawing.Size(294, 189);
+            this.AddparentPanel.Size = new System.Drawing.Size(296, 189);
             this.AddparentPanel.TabIndex = 9;
             this.AddparentPanel.Visible = false;
             // 
@@ -337,7 +337,7 @@
             this.txtaddress.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.txtaddress.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
             this.txtaddress.LineThickness = 3;
-            this.txtaddress.Location = new System.Drawing.Point(127, 43);
+            this.txtaddress.Location = new System.Drawing.Point(129, 43);
             this.txtaddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -379,7 +379,7 @@
             this.txtparentName.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.txtparentName.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
             this.txtparentName.LineThickness = 3;
-            this.txtparentName.Location = new System.Drawing.Point(127, 4);
+            this.txtparentName.Location = new System.Drawing.Point(129, 4);
             this.txtparentName.Margin = new System.Windows.Forms.Padding(4);
             this.txtparentName.Name = "txtparentName";
             this.txtparentName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -401,7 +401,7 @@
             this.txtSsn.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.txtSsn.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
             this.txtSsn.LineThickness = 3;
-            this.txtSsn.Location = new System.Drawing.Point(127, 146);
+            this.txtSsn.Location = new System.Drawing.Point(129, 146);
             this.txtSsn.Margin = new System.Windows.Forms.Padding(4);
             this.txtSsn.Name = "txtSsn";
             this.txtSsn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -423,7 +423,7 @@
             this.txtphone.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.txtphone.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
             this.txtphone.LineThickness = 3;
-            this.txtphone.Location = new System.Drawing.Point(127, 107);
+            this.txtphone.Location = new System.Drawing.Point(129, 107);
             this.txtphone.Margin = new System.Windows.Forms.Padding(4);
             this.txtphone.Name = "txtphone";
             this.txtphone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -438,7 +438,7 @@
             this.bunifuCustomLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(212, 2);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(214, 2);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(81, 17);
             this.bunifuCustomLabel4.TabIndex = 0;
@@ -458,7 +458,7 @@
             this.txtsubmitSsn.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.txtsubmitSsn.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
             this.txtsubmitSsn.LineThickness = 3;
-            this.txtsubmitSsn.Location = new System.Drawing.Point(125, 23);
+            this.txtsubmitSsn.Location = new System.Drawing.Point(127, 23);
             this.txtsubmitSsn.Margin = new System.Windows.Forms.Padding(4);
             this.txtsubmitSsn.Name = "txtsubmitSsn";
             this.txtsubmitSsn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -492,7 +492,7 @@
             this.bunifuCustomLabel8.AutoSize = true;
             this.bunifuCustomLabel8.Font = new System.Drawing.Font("Lato Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(257, 65);
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(259, 65);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
             this.bunifuCustomLabel8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bunifuCustomLabel8.Size = new System.Drawing.Size(32, 19);
@@ -615,6 +615,16 @@
             this.datagrid1.Size = new System.Drawing.Size(872, 97);
             this.datagrid1.TabIndex = 5;
             // 
+            // sClassDataBindingSource
+            // 
+            this.sClassDataBindingSource.DataMember = "S_ClassData";
+            this.sClassDataBindingSource.DataSource = this.aMS_DataDataSet;
+            // 
+            // aMS_DataDataSet
+            // 
+            this.aMS_DataDataSet.DataSetName = "AMS_DataDataSet";
+            this.aMS_DataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
@@ -667,20 +677,10 @@
             this.bunifuElipse2.ElipseRadius = 5;
             this.bunifuElipse2.TargetControl = this;
             // 
-            // aMS_DataDataSet
-            // 
-            this.aMS_DataDataSet.DataSetName = "AMS_DataDataSet";
-            this.aMS_DataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // aMSDataDataSetBindingSource
             // 
             this.aMSDataDataSetBindingSource.DataSource = this.aMS_DataDataSet;
             this.aMSDataDataSetBindingSource.Position = 0;
-            // 
-            // sClassDataBindingSource
-            // 
-            this.sClassDataBindingSource.DataMember = "S_ClassData";
-            this.sClassDataBindingSource.DataSource = this.aMS_DataDataSet;
             // 
             // s_ClassDataTableAdapter
             // 
@@ -727,11 +727,11 @@
             this.AddparentPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.datagrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sClassDataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aMS_DataDataSet)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aMS_DataDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aMSDataDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sClassDataBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
