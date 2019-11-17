@@ -25,8 +25,7 @@ namespace Aqua_AMS.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MAX-PC;Initial Catalog=PosData;Integrated Data Source=MAX-PC;Initial " +
-            "Catalog=AMS_Data;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MAX-PC;Initial Catalog=AMS_Data;Integrated Security=True")]
         public string ConString {
             get {
                 return ((string)(this["ConString"]));

@@ -130,6 +130,12 @@
     <Compile Include="View\MainFrm.Designer.cs">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\testUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\testUC.Designer.cs">
+      <DependentUpon>testUC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\AddStudentUC.resx">
       <DependentUpon>AddStudentUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +163,9 @@
     </Compile>
     <EmbeddedResource Include="View\MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\testUC.resx">
+      <DependentUpon>testUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="AMS_DataDataSet.xsc">
       <DependentUpon>AMS_DataDataSet.xsd</DependentUpon>

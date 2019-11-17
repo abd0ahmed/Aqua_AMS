@@ -49,6 +49,7 @@
             this.DDtimeP = new Bunifu.Framework.UI.BunifuDropdown();
             this.DDclass = new Bunifu.Framework.UI.BunifuDropdown();
             this.txtstuName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label2 = new System.Windows.Forms.Label();
             this.AddparentPanel = new System.Windows.Forms.Panel();
             this.txtaddress = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.BtnSaveParent = new Bunifu.Framework.UI.BunifuTileButton();
@@ -58,22 +59,19 @@
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtsubmitSsn = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.PtnAddParent = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.BtnSaveStudent = new Bunifu.Framework.UI.BunifuTileButton();
             this.BtnAddStudent = new Bunifu.Framework.UI.BunifuTileButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.datagrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.sClassDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aMS_DataDataSet = new Aqua_AMS.AMS_DataDataSet();
+            this.ClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sellprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnClose = new System.Windows.Forms.Button();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.aMSDataDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.s_ClassDataTableAdapter = new Aqua_AMS.AMS_DataDataSetTableAdapters.S_ClassDataTableAdapter();
-            this.ClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sellprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txParentName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataPanel)).BeginInit();
             this.DataPanel.Panel1.SuspendLayout();
@@ -82,10 +80,7 @@
             this.AddparentPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sClassDataBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aMS_DataDataSet)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aMSDataDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -127,11 +122,12 @@
             // 
             // DataPanel.Panel2
             // 
+            this.DataPanel.Panel2.Controls.Add(this.label2);
             this.DataPanel.Panel2.Controls.Add(this.AddparentPanel);
             this.DataPanel.Panel2.Controls.Add(this.bunifuCustomLabel4);
+            this.DataPanel.Panel2.Controls.Add(this.txParentName);
             this.DataPanel.Panel2.Controls.Add(this.txtsubmitSsn);
             this.DataPanel.Panel2.Controls.Add(this.PtnAddParent);
-            this.DataPanel.Panel2.Controls.Add(this.bunifuCustomLabel8);
             this.DataPanel.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.DataPanel.Panel2MinSize = 20;
             this.DataPanel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -150,7 +146,7 @@
             this.bunifuCustomLabel7.Location = new System.Drawing.Point(198, 2);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(67, 17);
-            this.bunifuCustomLabel7.TabIndex = 28;
+            this.bunifuCustomLabel7.TabIndex = 0;
             this.bunifuCustomLabel7.Text = "بيانات الطالب";
             // 
             // DpDop
@@ -166,7 +162,7 @@
             this.DpDop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DpDop.Name = "DpDop";
             this.DpDop.Size = new System.Drawing.Size(163, 32);
-            this.DpDop.TabIndex = 27;
+            this.DpDop.TabIndex = 5;
             this.DpDop.Value = new System.DateTime(2010, 11, 15, 4, 51, 0, 0);
             // 
             // bunifuCustomLabel5
@@ -179,7 +175,7 @@
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(63, 19);
-            this.bunifuCustomLabel5.TabIndex = 22;
+            this.bunifuCustomLabel5.TabIndex = 0;
             this.bunifuCustomLabel5.Text = "تاريخ الميلاد:";
             this.bunifuCustomLabel5.UseCompatibleTextRendering = true;
             // 
@@ -193,7 +189,7 @@
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
             this.bunifuCustomLabel6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bunifuCustomLabel6.Size = new System.Drawing.Size(33, 19);
-            this.bunifuCustomLabel6.TabIndex = 23;
+            this.bunifuCustomLabel6.TabIndex = 0;
             this.bunifuCustomLabel6.Text = "الفترة:";
             this.bunifuCustomLabel6.UseCompatibleTextRendering = true;
             // 
@@ -207,7 +203,7 @@
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(37, 19);
-            this.bunifuCustomLabel3.TabIndex = 24;
+            this.bunifuCustomLabel3.TabIndex = 0;
             this.bunifuCustomLabel3.Text = "الفصل:";
             this.bunifuCustomLabel3.UseCompatibleTextRendering = true;
             // 
@@ -221,7 +217,7 @@
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(27, 19);
-            this.bunifuCustomLabel2.TabIndex = 25;
+            this.bunifuCustomLabel2.TabIndex = 0;
             this.bunifuCustomLabel2.Text = "الفئة:";
             this.bunifuCustomLabel2.UseCompatibleTextRendering = true;
             // 
@@ -235,7 +231,7 @@
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(57, 19);
-            this.bunifuCustomLabel1.TabIndex = 26;
+            this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "اسم الطالب:";
             this.bunifuCustomLabel1.UseCompatibleTextRendering = true;
             // 
@@ -253,7 +249,7 @@
             this.DDGrade.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.DDGrade.selectedIndex = -1;
             this.DDGrade.Size = new System.Drawing.Size(163, 31);
-            this.DDGrade.TabIndex = 19;
+            this.DDGrade.TabIndex = 2;
             // 
             // DDtimeP
             // 
@@ -269,7 +265,7 @@
             this.DDtimeP.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.DDtimeP.selectedIndex = -1;
             this.DDtimeP.Size = new System.Drawing.Size(163, 31);
-            this.DDtimeP.TabIndex = 20;
+            this.DDtimeP.TabIndex = 4;
             // 
             // DDclass
             // 
@@ -285,7 +281,7 @@
             this.DDclass.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.DDclass.selectedIndex = -1;
             this.DDclass.Size = new System.Drawing.Size(163, 31);
-            this.DDclass.TabIndex = 21;
+            this.DDclass.TabIndex = 3;
             // 
             // txtstuName
             // 
@@ -305,22 +301,31 @@
             this.txtstuName.Margin = new System.Windows.Forms.Padding(4);
             this.txtstuName.Name = "txtstuName";
             this.txtstuName.Size = new System.Drawing.Size(163, 31);
-            this.txtstuName.TabIndex = 18;
+            this.txtstuName.TabIndex = 1;
             this.txtstuName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(87, 2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "label2";
+            this.label2.Visible = false;
             // 
             // AddparentPanel
             // 
-            this.AddparentPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.AddparentPanel.Controls.Add(this.txtaddress);
             this.AddparentPanel.Controls.Add(this.BtnSaveParent);
             this.AddparentPanel.Controls.Add(this.txtparentName);
             this.AddparentPanel.Controls.Add(this.txtSsn);
             this.AddparentPanel.Controls.Add(this.txtphone);
-            this.AddparentPanel.Location = new System.Drawing.Point(-1, 155);
+            this.AddparentPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.AddparentPanel.Location = new System.Drawing.Point(0, 158);
             this.AddparentPanel.Name = "AddparentPanel";
-            this.AddparentPanel.Size = new System.Drawing.Size(296, 189);
-            this.AddparentPanel.TabIndex = 9;
+            this.AddparentPanel.Size = new System.Drawing.Size(292, 189);
+            this.AddparentPanel.TabIndex = 0;
             this.AddparentPanel.Visible = false;
             // 
             // txtaddress
@@ -337,12 +342,12 @@
             this.txtaddress.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.txtaddress.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
             this.txtaddress.LineThickness = 3;
-            this.txtaddress.Location = new System.Drawing.Point(129, 43);
+            this.txtaddress.Location = new System.Drawing.Point(124, 43);
             this.txtaddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtaddress.Size = new System.Drawing.Size(163, 56);
-            this.txtaddress.TabIndex = 18;
+            this.txtaddress.TabIndex = 8;
             this.txtaddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // BtnSaveParent
@@ -362,7 +367,7 @@
             this.BtnSaveParent.Margin = new System.Windows.Forms.Padding(6);
             this.BtnSaveParent.Name = "BtnSaveParent";
             this.BtnSaveParent.Size = new System.Drawing.Size(84, 75);
-            this.BtnSaveParent.TabIndex = 3;
+            this.BtnSaveParent.TabIndex = 0;
             this.BtnSaveParent.Click += new System.EventHandler(this.BtnSaveParent_Click);
             // 
             // txtparentName
@@ -379,12 +384,12 @@
             this.txtparentName.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.txtparentName.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
             this.txtparentName.LineThickness = 3;
-            this.txtparentName.Location = new System.Drawing.Point(129, 4);
+            this.txtparentName.Location = new System.Drawing.Point(124, 4);
             this.txtparentName.Margin = new System.Windows.Forms.Padding(4);
             this.txtparentName.Name = "txtparentName";
             this.txtparentName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtparentName.Size = new System.Drawing.Size(163, 31);
-            this.txtparentName.TabIndex = 18;
+            this.txtparentName.TabIndex = 7;
             this.txtparentName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtSsn
@@ -401,12 +406,12 @@
             this.txtSsn.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.txtSsn.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
             this.txtSsn.LineThickness = 3;
-            this.txtSsn.Location = new System.Drawing.Point(129, 146);
+            this.txtSsn.Location = new System.Drawing.Point(124, 146);
             this.txtSsn.Margin = new System.Windows.Forms.Padding(4);
             this.txtSsn.Name = "txtSsn";
             this.txtSsn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtSsn.Size = new System.Drawing.Size(163, 31);
-            this.txtSsn.TabIndex = 18;
+            this.txtSsn.TabIndex = 10;
             this.txtSsn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtphone
@@ -423,12 +428,12 @@
             this.txtphone.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.txtphone.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
             this.txtphone.LineThickness = 3;
-            this.txtphone.Location = new System.Drawing.Point(129, 107);
+            this.txtphone.Location = new System.Drawing.Point(124, 107);
             this.txtphone.Margin = new System.Windows.Forms.Padding(4);
             this.txtphone.Name = "txtphone";
             this.txtphone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtphone.Size = new System.Drawing.Size(163, 31);
-            this.txtphone.TabIndex = 18;
+            this.txtphone.TabIndex = 9;
             this.txtphone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuCustomLabel4
@@ -438,7 +443,7 @@
             this.bunifuCustomLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(214, 2);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(201, 10);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(81, 17);
             this.bunifuCustomLabel4.TabIndex = 0;
@@ -458,13 +463,14 @@
             this.txtsubmitSsn.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
             this.txtsubmitSsn.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
             this.txtsubmitSsn.LineThickness = 3;
-            this.txtsubmitSsn.Location = new System.Drawing.Point(127, 23);
+            this.txtsubmitSsn.Location = new System.Drawing.Point(121, 29);
             this.txtsubmitSsn.Margin = new System.Windows.Forms.Padding(4);
             this.txtsubmitSsn.Name = "txtsubmitSsn";
             this.txtsubmitSsn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtsubmitSsn.Size = new System.Drawing.Size(163, 31);
-            this.txtsubmitSsn.TabIndex = 18;
+            this.txtsubmitSsn.TabIndex = 6;
             this.txtsubmitSsn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtsubmitSsn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtsubmitSsn_KeyDown);
             // 
             // PtnAddParent
             // 
@@ -483,22 +489,8 @@
             this.PtnAddParent.Margin = new System.Windows.Forms.Padding(6);
             this.PtnAddParent.Name = "PtnAddParent";
             this.PtnAddParent.Size = new System.Drawing.Size(74, 66);
-            this.PtnAddParent.TabIndex = 3;
+            this.PtnAddParent.TabIndex = 0;
             this.PtnAddParent.Click += new System.EventHandler(this.PtnAddParent_Click);
-            // 
-            // bunifuCustomLabel8
-            // 
-            this.bunifuCustomLabel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Lato Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(259, 65);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(32, 19);
-            this.bunifuCustomLabel8.TabIndex = 26;
-            this.bunifuCustomLabel8.Text = "الاسم:";
-            this.bunifuCustomLabel8.UseCompatibleTextRendering = true;
             // 
             // BtnSaveStudent
             // 
@@ -517,7 +509,8 @@
             this.BtnSaveStudent.Margin = new System.Windows.Forms.Padding(6);
             this.BtnSaveStudent.Name = "BtnSaveStudent";
             this.BtnSaveStudent.Size = new System.Drawing.Size(108, 88);
-            this.BtnSaveStudent.TabIndex = 3;
+            this.BtnSaveStudent.TabIndex = 0;
+            this.BtnSaveStudent.Click += new System.EventHandler(this.BtnSaveStudent_Click);
             // 
             // BtnAddStudent
             // 
@@ -536,7 +529,7 @@
             this.BtnAddStudent.Margin = new System.Windows.Forms.Padding(6);
             this.BtnAddStudent.Name = "BtnAddStudent";
             this.BtnAddStudent.Size = new System.Drawing.Size(105, 88);
-            this.BtnAddStudent.TabIndex = 3;
+            this.BtnAddStudent.TabIndex = 0;
             this.BtnAddStudent.Click += new System.EventHandler(this.BtnAddStudent_Click);
             // 
             // panel1
@@ -557,7 +550,6 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.datagrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.datagrid1.AutoGenerateColumns = false;
             this.datagrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.datagrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagrid1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
@@ -574,7 +566,6 @@
             this.datagrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ClassName,
             this.sellprice});
-            this.datagrid1.DataSource = this.sClassDataBindingSource;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -613,17 +604,30 @@
             this.datagrid1.ShowEditingIcon = false;
             this.datagrid1.ShowRowErrors = false;
             this.datagrid1.Size = new System.Drawing.Size(872, 97);
-            this.datagrid1.TabIndex = 5;
+            this.datagrid1.TabIndex = 0;
             // 
-            // sClassDataBindingSource
+            // ClassName
             // 
-            this.sClassDataBindingSource.DataMember = "S_ClassData";
-            this.sClassDataBindingSource.DataSource = this.aMS_DataDataSet;
+            this.ClassName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ClassName.DataPropertyName = "ClassName";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ClassName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ClassName.FillWeight = 64.3569F;
+            this.ClassName.HeaderText = "اسم الفصل";
+            this.ClassName.Name = "ClassName";
+            this.ClassName.ReadOnly = true;
+            this.ClassName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // aMS_DataDataSet
+            // sellprice
             // 
-            this.aMS_DataDataSet.DataSetName = "AMS_DataDataSet";
-            this.aMS_DataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.sellprice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.sellprice.DataPropertyName = "count";
+            this.sellprice.FillWeight = 20.86623F;
+            this.sellprice.HeaderText = "عدد الطلاب";
+            this.sellprice.MinimumWidth = 20;
+            this.sellprice.Name = "sellprice";
+            this.sellprice.ReadOnly = true;
+            this.sellprice.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // panel2
             // 
@@ -634,7 +638,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(872, 33);
-            this.panel2.TabIndex = 2;
+            this.panel2.TabIndex = 0;
             // 
             // label1
             // 
@@ -661,7 +665,7 @@
             this.BtnClose.Margin = new System.Windows.Forms.Padding(0);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.Size = new System.Drawing.Size(30, 33);
-            this.BtnClose.TabIndex = 5;
+            this.BtnClose.TabIndex = 0;
             this.BtnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BtnClose.UseMnemonic = false;
             this.BtnClose.UseVisualStyleBackColor = false;
@@ -677,37 +681,33 @@
             this.bunifuElipse2.ElipseRadius = 5;
             this.bunifuElipse2.TargetControl = this;
             // 
-            // aMSDataDataSetBindingSource
-            // 
-            this.aMSDataDataSetBindingSource.DataSource = this.aMS_DataDataSet;
-            this.aMSDataDataSetBindingSource.Position = 0;
-            // 
             // s_ClassDataTableAdapter
             // 
             this.s_ClassDataTableAdapter.ClearBeforeFill = true;
             // 
-            // ClassName
+            // txParentName
             // 
-            this.ClassName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ClassName.DataPropertyName = "ClassName";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ClassName.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ClassName.FillWeight = 64.3569F;
-            this.ClassName.HeaderText = "اسم الفصل";
-            this.ClassName.Name = "ClassName";
-            this.ClassName.ReadOnly = true;
-            this.ClassName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // sellprice
-            // 
-            this.sellprice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.sellprice.DataPropertyName = "count";
-            this.sellprice.FillWeight = 20.86623F;
-            this.sellprice.HeaderText = "عدد الطلاب";
-            this.sellprice.MinimumWidth = 20;
-            this.sellprice.Name = "sellprice";
-            this.sellprice.ReadOnly = true;
-            this.sellprice.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.txParentName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txParentName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
+            this.txParentName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txParentName.Enabled = false;
+            this.txParentName.Font = new System.Drawing.Font("Lato Black", 10F, System.Drawing.FontStyle.Bold);
+            this.txParentName.ForeColor = System.Drawing.Color.White;
+            this.txParentName.HintForeColor = System.Drawing.Color.Silver;
+            this.txParentName.HintText = "أسم ولى الامر";
+            this.txParentName.isPassword = false;
+            this.txParentName.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
+            this.txParentName.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
+            this.txParentName.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(63)))), ((int)(((byte)(131)))));
+            this.txParentName.LineThickness = 3;
+            this.txParentName.Location = new System.Drawing.Point(121, 68);
+            this.txParentName.Margin = new System.Windows.Forms.Padding(4);
+            this.txParentName.Name = "txParentName";
+            this.txParentName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txParentName.Size = new System.Drawing.Size(163, 31);
+            this.txParentName.TabIndex = 6;
+            this.txParentName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txParentName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtsubmitSsn_KeyDown);
             // 
             // AddStudentUC
             // 
@@ -717,6 +717,8 @@
             this.Controls.Add(this.panel2);
             this.Name = "AddStudentUC";
             this.Size = new System.Drawing.Size(872, 488);
+            this.Load += new System.EventHandler(this.AddStudentUC_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddStudentUC_KeyDown);
             this.panel3.ResumeLayout(false);
             this.DataPanel.Panel1.ResumeLayout(false);
             this.DataPanel.Panel1.PerformLayout();
@@ -727,11 +729,8 @@
             this.AddparentPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.datagrid1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sClassDataBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aMS_DataDataSet)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aMSDataDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -767,14 +766,12 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtparentName;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtphone;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtsubmitSsn;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtSsn;
         private Bunifu.Framework.UI.BunifuTileButton BtnSaveStudent;
-        private System.Windows.Forms.BindingSource sClassDataBindingSource;
-        private AMS_DataDataSet aMS_DataDataSet;
-        private System.Windows.Forms.BindingSource aMSDataDataSetBindingSource;
         private AMS_DataDataSetTableAdapters.S_ClassDataTableAdapter s_ClassDataTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClassName;
         private System.Windows.Forms.DataGridViewTextBoxColumn sellprice;
+        private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txParentName;
     }
 }

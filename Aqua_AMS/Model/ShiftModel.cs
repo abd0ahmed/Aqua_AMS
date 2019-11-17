@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aqua_AMS.Model
 {
-    class ShiftModel : IShiftModel
+ public   class ShiftModel : IShiftModel
     {
         public int ShiftID { get; set; }
         public string ShiftName { get; set; }

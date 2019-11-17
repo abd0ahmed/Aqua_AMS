@@ -39,8 +39,8 @@
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.StudentsPanel = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton7 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.BtnStudentAteend = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.BtnEditStudents = new Bunifu.Framework.UI.BunifuFlatButton();
             this.BtnAddStudent = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.sideinfopanel = new System.Windows.Forms.Panel();
@@ -60,6 +60,7 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.BodyPanel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.BtnTest = new Bunifu.Framework.UI.BunifuFlatButton();
             this.sidepanel.SuspendLayout();
             this.AdminPanel.SuspendLayout();
             this.StudentsPanel.SuspendLayout();
@@ -94,7 +95,7 @@
             this.AdminPanel.Controls.Add(this.BtnClasses);
             this.AdminPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.AdminPanel.Font = new System.Drawing.Font("Lato Black", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminPanel.Location = new System.Drawing.Point(0, 466);
+            this.AdminPanel.Location = new System.Drawing.Point(0, 507);
             this.AdminPanel.Name = "AdminPanel";
             this.AdminPanel.Size = new System.Drawing.Size(194, 127);
             this.AdminPanel.TabIndex = 5;
@@ -238,7 +239,7 @@
             this.bunifuFlatButton3.IconVisible = true;
             this.bunifuFlatButton3.IconZoom = 70D;
             this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(0, 425);
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(0, 466);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
@@ -276,7 +277,7 @@
             this.bunifuFlatButton4.IconVisible = true;
             this.bunifuFlatButton4.IconZoom = 80D;
             this.bunifuFlatButton4.IsTab = false;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 384);
+            this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 425);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
@@ -312,7 +313,7 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 70D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 343);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 384);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
@@ -330,91 +331,93 @@
             // StudentsPanel
             // 
             this.StudentsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(42)))), ((int)(((byte)(87)))));
-            this.StudentsPanel.Controls.Add(this.bunifuFlatButton7);
-            this.StudentsPanel.Controls.Add(this.bunifuFlatButton5);
+            this.StudentsPanel.Controls.Add(this.BtnTest);
+            this.StudentsPanel.Controls.Add(this.BtnStudentAteend);
+            this.StudentsPanel.Controls.Add(this.BtnEditStudents);
             this.StudentsPanel.Controls.Add(this.BtnAddStudent);
             this.StudentsPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.StudentsPanel.Font = new System.Drawing.Font("Lato Black", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StudentsPanel.Location = new System.Drawing.Point(0, 212);
             this.StudentsPanel.Name = "StudentsPanel";
-            this.StudentsPanel.Size = new System.Drawing.Size(194, 131);
+            this.StudentsPanel.Size = new System.Drawing.Size(194, 172);
             this.StudentsPanel.TabIndex = 6;
             this.StudentsPanel.Visible = false;
             // 
-            // bunifuFlatButton7
+            // BtnStudentAteend
             // 
-            this.bunifuFlatButton7.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
-            this.bunifuFlatButton7.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton7.BorderRadius = 0;
-            this.bunifuFlatButton7.ButtonText = "تسجيل حضور وغياب";
-            this.bunifuFlatButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton7.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton7.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton7.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton7.Iconimage")));
-            this.bunifuFlatButton7.Iconimage_right = null;
-            this.bunifuFlatButton7.Iconimage_right_Selected = null;
-            this.bunifuFlatButton7.Iconimage_Selected = null;
-            this.bunifuFlatButton7.IconMarginLeft = 0;
-            this.bunifuFlatButton7.IconMarginRight = 0;
-            this.bunifuFlatButton7.IconRightVisible = true;
-            this.bunifuFlatButton7.IconRightZoom = 0D;
-            this.bunifuFlatButton7.IconVisible = true;
-            this.bunifuFlatButton7.IconZoom = 70D;
-            this.bunifuFlatButton7.IsTab = false;
-            this.bunifuFlatButton7.Location = new System.Drawing.Point(0, 82);
-            this.bunifuFlatButton7.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.bunifuFlatButton7.Name = "bunifuFlatButton7";
-            this.bunifuFlatButton7.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
-            this.bunifuFlatButton7.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton7.Padding = new System.Windows.Forms.Padding(0, 20, 0, 20);
-            this.bunifuFlatButton7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bunifuFlatButton7.selected = false;
-            this.bunifuFlatButton7.Size = new System.Drawing.Size(194, 41);
-            this.bunifuFlatButton7.TabIndex = 8;
-            this.bunifuFlatButton7.Text = "تسجيل حضور وغياب";
-            this.bunifuFlatButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton7.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton7.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStudentAteend.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
+            this.BtnStudentAteend.BackColor = System.Drawing.Color.Transparent;
+            this.BtnStudentAteend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnStudentAteend.BorderRadius = 0;
+            this.BtnStudentAteend.ButtonText = "تسجيل حضور وغياب";
+            this.BtnStudentAteend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnStudentAteend.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnStudentAteend.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnStudentAteend.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnStudentAteend.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnStudentAteend.Iconimage")));
+            this.BtnStudentAteend.Iconimage_right = null;
+            this.BtnStudentAteend.Iconimage_right_Selected = null;
+            this.BtnStudentAteend.Iconimage_Selected = null;
+            this.BtnStudentAteend.IconMarginLeft = 0;
+            this.BtnStudentAteend.IconMarginRight = 0;
+            this.BtnStudentAteend.IconRightVisible = true;
+            this.BtnStudentAteend.IconRightZoom = 0D;
+            this.BtnStudentAteend.IconVisible = true;
+            this.BtnStudentAteend.IconZoom = 70D;
+            this.BtnStudentAteend.IsTab = false;
+            this.BtnStudentAteend.Location = new System.Drawing.Point(0, 82);
+            this.BtnStudentAteend.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.BtnStudentAteend.Name = "BtnStudentAteend";
+            this.BtnStudentAteend.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtnStudentAteend.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
+            this.BtnStudentAteend.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtnStudentAteend.Padding = new System.Windows.Forms.Padding(0, 20, 0, 20);
+            this.BtnStudentAteend.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.BtnStudentAteend.selected = false;
+            this.BtnStudentAteend.Size = new System.Drawing.Size(194, 41);
+            this.BtnStudentAteend.TabIndex = 8;
+            this.BtnStudentAteend.Text = "تسجيل حضور وغياب";
+            this.BtnStudentAteend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnStudentAteend.Textcolor = System.Drawing.Color.White;
+            this.BtnStudentAteend.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // bunifuFlatButton5
+            // BtnEditStudents
             // 
-            this.bunifuFlatButton5.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
-            this.bunifuFlatButton5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton5.BorderRadius = 0;
-            this.bunifuFlatButton5.ButtonText = "ادارة بيانات الطلاب";
-            this.bunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton5.Iconimage")));
-            this.bunifuFlatButton5.Iconimage_right = null;
-            this.bunifuFlatButton5.Iconimage_right_Selected = null;
-            this.bunifuFlatButton5.Iconimage_Selected = null;
-            this.bunifuFlatButton5.IconMarginLeft = 0;
-            this.bunifuFlatButton5.IconMarginRight = 0;
-            this.bunifuFlatButton5.IconRightVisible = true;
-            this.bunifuFlatButton5.IconRightZoom = 0D;
-            this.bunifuFlatButton5.IconVisible = true;
-            this.bunifuFlatButton5.IconZoom = 70D;
-            this.bunifuFlatButton5.IsTab = false;
-            this.bunifuFlatButton5.Location = new System.Drawing.Point(0, 41);
-            this.bunifuFlatButton5.Name = "bunifuFlatButton5";
-            this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
-            this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton5.Padding = new System.Windows.Forms.Padding(0, 50, 0, 50);
-            this.bunifuFlatButton5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bunifuFlatButton5.selected = false;
-            this.bunifuFlatButton5.Size = new System.Drawing.Size(194, 41);
-            this.bunifuFlatButton5.TabIndex = 7;
-            this.bunifuFlatButton5.Text = "ادارة بيانات الطلاب";
-            this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton5.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditStudents.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
+            this.BtnEditStudents.BackColor = System.Drawing.Color.Transparent;
+            this.BtnEditStudents.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnEditStudents.BorderRadius = 0;
+            this.BtnEditStudents.ButtonText = "ادارة بيانات الطلاب";
+            this.BtnEditStudents.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEditStudents.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnEditStudents.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnEditStudents.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnEditStudents.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnEditStudents.Iconimage")));
+            this.BtnEditStudents.Iconimage_right = null;
+            this.BtnEditStudents.Iconimage_right_Selected = null;
+            this.BtnEditStudents.Iconimage_Selected = null;
+            this.BtnEditStudents.IconMarginLeft = 0;
+            this.BtnEditStudents.IconMarginRight = 0;
+            this.BtnEditStudents.IconRightVisible = true;
+            this.BtnEditStudents.IconRightZoom = 0D;
+            this.BtnEditStudents.IconVisible = true;
+            this.BtnEditStudents.IconZoom = 70D;
+            this.BtnEditStudents.IsTab = false;
+            this.BtnEditStudents.Location = new System.Drawing.Point(0, 41);
+            this.BtnEditStudents.Name = "BtnEditStudents";
+            this.BtnEditStudents.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtnEditStudents.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
+            this.BtnEditStudents.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtnEditStudents.Padding = new System.Windows.Forms.Padding(0, 50, 0, 50);
+            this.BtnEditStudents.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.BtnEditStudents.selected = false;
+            this.BtnEditStudents.Size = new System.Drawing.Size(194, 41);
+            this.BtnEditStudents.TabIndex = 7;
+            this.BtnEditStudents.Text = "ادارة بيانات الطلاب";
+            this.BtnEditStudents.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnEditStudents.Textcolor = System.Drawing.Color.White;
+            this.BtnEditStudents.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditStudents.Click += new System.EventHandler(this.bunifuFlatButton5_Click);
             // 
             // BtnAddStudent
             // 
@@ -702,6 +705,45 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // BtnTest
+            // 
+            this.BtnTest.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
+            this.BtnTest.BackColor = System.Drawing.Color.Transparent;
+            this.BtnTest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnTest.BorderRadius = 0;
+            this.BtnTest.ButtonText = "تسجيل حضور وغياب";
+            this.BtnTest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnTest.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnTest.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnTest.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnTest.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnTest.Iconimage")));
+            this.BtnTest.Iconimage_right = null;
+            this.BtnTest.Iconimage_right_Selected = null;
+            this.BtnTest.Iconimage_Selected = null;
+            this.BtnTest.IconMarginLeft = 0;
+            this.BtnTest.IconMarginRight = 0;
+            this.BtnTest.IconRightVisible = true;
+            this.BtnTest.IconRightZoom = 0D;
+            this.BtnTest.IconVisible = true;
+            this.BtnTest.IconZoom = 70D;
+            this.BtnTest.IsTab = false;
+            this.BtnTest.Location = new System.Drawing.Point(0, 123);
+            this.BtnTest.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.BtnTest.Name = "BtnTest";
+            this.BtnTest.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtnTest.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(127)))), ((int)(((byte)(172)))));
+            this.BtnTest.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtnTest.Padding = new System.Windows.Forms.Padding(0, 20, 0, 20);
+            this.BtnTest.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.BtnTest.selected = false;
+            this.BtnTest.Size = new System.Drawing.Size(194, 41);
+            this.BtnTest.TabIndex = 9;
+            this.BtnTest.Text = "تسجيل حضور وغياب";
+            this.BtnTest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnTest.Textcolor = System.Drawing.Color.White;
+            this.BtnTest.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnTest.Click += new System.EventHandler(this.bunifuFlatButton6_Click_1);
+            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -759,8 +801,9 @@
         private Bunifu.Framework.UI.BunifuFlatButton BtnShifts;
         private Bunifu.Framework.UI.BunifuFlatButton BtnClasses;
         private System.Windows.Forms.Panel StudentsPanel;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton7;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnStudentAteend;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnEditStudents;
         private Bunifu.Framework.UI.BunifuFlatButton BtnAddStudent;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnTest;
     }
 }

@@ -125,5 +125,19 @@ namespace Aqua_AMS.View
             AddStudentUC uc = new AddStudentUC();
             showUC(uc);
         }
+
+        private void bunifuFlatButton6_Click_1(object sender, EventArgs e)
+        {
+            testUC te = new testUC();
+            te.Dock = DockStyle.Fill;
+            
+            BodyPanel.Controls.Add(te);
+            te.BringToFront();
+        }
+
+        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
